@@ -3,7 +3,7 @@ import React from 'react';
 
 function Button({ children, onClick, isActive }) {
     return (
-        <button className={isActive ? 'btn btn_active' : 'btn'} onClick={onClick}>
+        <button className={isActive ? 'Btn Btn_active' : 'Btn'} onClick={onClick}>
             {children}
         </button>
     );
