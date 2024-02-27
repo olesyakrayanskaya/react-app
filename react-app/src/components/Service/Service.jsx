@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Service({ title, description }) {
     return (
         <li className="services__item">
