@@ -1,9 +1,16 @@
-import './Button.css';
+import classes from './Button.module.css';
 import React from 'react';
 
 function Button({ children, onClick, isActive }) {
     return (
-        <button className={isActive ? 'Btn Btn_active' : 'Btn'} onClick={onClick}>
+        <button
+            className={
+                isActive
+                    ? `${classes.Btn} ${classes.Btn_active}`
+                    : `${classes.Btn}`
+            }
+            onClick={onClick}
+        >
             {children}
         </button>
     );
