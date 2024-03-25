@@ -4,6 +4,7 @@ import Services from './components/Services/Services';
 import Rates from './components/Rates/Rates';
 import Navigation from './components/Navigation/Navigation';
 import Feedback from './components/Feedback/Feedback';
+import Reviews from './components/Reviews/Reviews';
 import { useState } from 'react';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                     </>
                 )}
                 {tab === 'feedback' && <Feedback />}
+                {tab === 'reviews' && <Reviews />}
             </main>
         </>
     );

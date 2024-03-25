@@ -1,0 +1,11 @@
+.Reviews__slide_active {
+  display: block;
+}
+
+.Reviews__slide_next {
+  display: none;
+}
+
+.Reviews__slide_last {
+  display: none;
+}

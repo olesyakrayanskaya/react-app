@@ -1,5 +1,4 @@
 import classes from './Button.module.css';
-import React from 'react';
 
 function Button({ children, isActive, ...props }) {
     return (

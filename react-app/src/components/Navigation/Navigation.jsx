@@ -15,6 +15,13 @@ function Navigation({ active, onChange }) {
             >
                 Связаться с нами
             </Button>
+            <Button
+                isActive={active === 'reviews'}
+                onClick={() => onChange('reviews')}
+            >
+                Отзывы наших клиентов
+            </Button>
+
         </section>
     );
 }
