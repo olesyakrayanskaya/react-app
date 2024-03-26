@@ -47,6 +47,7 @@ function Reviews() {
                                 className={classes.Reviews__photo}
                                 src={photo}
                                 alt={`Фото клиента с именем ${name}.`}
+                                width={170}
                             />
                             <h4 className={classes.Reviews__name}>{name}</h4>
                             <p className={classes.Reviews__text}>{text}</p>
@@ -56,7 +57,7 @@ function Reviews() {
             </div>
             <div className={classes.Rewiews__btns}>
                 <button
-                    className={classes.Reviews__btn}
+                    className={`${classes.Reviews__btn} ${classes.Reviews__btn_prev}`}
                     onClick={() =>
                         setCurrentIndex((prevState) => prevState - 1)
                     }
@@ -65,10 +66,11 @@ function Reviews() {
                         className={classes.Reviews__arrow}
                         src={prev}
                         alt="Стрелка слайдера предыдущий слайд."
+                        width={20}
                     />
                 </button>
                 <button
-                    className={classes.Reviews__btn}
+                    className={`${classes.Reviews__btn} ${classes.Reviews__btn_next}`}
                     onClick={() =>
                         setCurrentIndex((prevState) => prevState + 1)
                     }
@@ -77,6 +79,7 @@ function Reviews() {
                         className={classes.Reviews__arrow}
                         src={next}
                         alt="Стрелка слайдера следующий слайд."
+                        width={20}
                     />
                 </button>
             </div>

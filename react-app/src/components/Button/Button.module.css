@@ -1,7 +1,11 @@
 .Btn {
   background-color: #e2dede;
+  height: 35px;
+  width: 140px;
 }
 
 .Btn_active {
   background-color: #da8282;
+  height: 35px;
+  width: 140px;
 }
