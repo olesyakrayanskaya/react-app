@@ -14,7 +14,7 @@ function App() {
         <>
             <Header />
             <main>
-                <h1>Виртуальный хостинг для сайта</h1>
+                <h1 className='Title'>Виртуальный хостинг для сайта</h1>
                 <Navigation active={tab} onChange={current => setTab(current)}/>
                 {tab === 'main' && (
                     <>

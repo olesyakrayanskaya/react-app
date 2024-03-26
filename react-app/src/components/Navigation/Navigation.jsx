@@ -1,8 +1,9 @@
 import Button from '../Button/Button';
+import classes from './Navigation.module.css';
 
 function Navigation({ active, onChange }) {
     return (
-        <section className="Navigation">
+        <section className={classes.Navigation}>
             <Button
                 isActive={active === 'main'}
                 onClick={() => onChange('main')}

@@ -1,0 +1,19 @@
+.Rates {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.Rates__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.Rates__description {
+  max-width: 600px;
+  padding: 30px;
+  background-color: #fffbfb;
+  margin: 40px auto;
+  border-radius: 6px;
+}

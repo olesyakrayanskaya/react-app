@@ -1,8 +1,10 @@
+import classes from './Service.module.css';
+
 function Service({ title, description }) {
     return (
-        <li className="services__item">
-            <p className="services__text">
-                <strong>{title} </strong>
+        <li className={classes.Services__item}>
+            <p className={classes.Services__text}>
+                <strong className={classes.Services__title}>{title} </strong>
                 {description}
             </p>
         </li>
