@@ -66,7 +66,7 @@ function Reviews() {
                         className={classes.Reviews__arrow}
                         src={prev}
                         alt="Стрелка слайдера предыдущий слайд."
-                        width={20}
+                        width={15}
                     />
                 </button>
                 <button
@@ -79,7 +79,7 @@ function Reviews() {
                         className={classes.Reviews__arrow}
                         src={next}
                         alt="Стрелка слайдера следующий слайд."
-                        width={20}
+                        width={15}
                     />
                 </button>
             </div>

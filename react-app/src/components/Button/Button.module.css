@@ -21,7 +21,7 @@
   background-color: #da8282;
 }
 
-@media (max-width: 496px) {
+@media (max-width: 600px) {
 
   .Btn {
     width: 100%;

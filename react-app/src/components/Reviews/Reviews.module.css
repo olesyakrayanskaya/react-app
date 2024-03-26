@@ -1,5 +1,9 @@
 .Reviews {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 60px;
   text-align: center;
 }
@@ -45,18 +49,18 @@
 
 .Reviews__btn {
   position: absolute;
-  top: 180px;
+  top: 270px;
   border: transparent;
   background-color: transparent;
   cursor: pointer;
 }
 
 .Reviews__btn_prev {
-  left: calc(50% - 320px)
+  left: 0;
 }
 
 .Reviews__btn_next {
-  left: calc(50% + 320px)
+  right: 0;
 }
 
 .Reviews__arrow {
@@ -68,20 +72,8 @@
 
 @media (max-width: 960px) {
 
-  .Rewiews__btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    gap: 30px;
-  }
-
-  .Reviews__btn {
-   position: static;
-  }
-
   .Reviews__arrow {
-    width: 15px;
+    width: 10px;
   }
 }
 
