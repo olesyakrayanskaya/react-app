@@ -20,3 +20,11 @@
 .Btn_active {
   background-color: #da8282;
 }
+
+@media (max-width: 496px) {
+
+  .Btn {
+    width: 100%;
+  }
+  
+}

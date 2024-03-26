@@ -17,3 +17,13 @@
   margin: 40px auto;
   border-radius: 6px;
 }
+
+@media (max-width: 960px) {
+
+  .Rates__btns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+

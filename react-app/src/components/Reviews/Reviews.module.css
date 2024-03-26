@@ -65,3 +65,23 @@
   -o-object-position: center;
      object-position: center;
 }
+
+@media (max-width: 960px) {
+
+  .Rewiews__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  .Reviews__btn {
+   position: static;
+  }
+
+  .Reviews__arrow {
+    width: 15px;
+  }
+}
+

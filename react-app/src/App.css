@@ -12,3 +12,11 @@
   font-weight: 600;
   color: #690e0e;
 }
+
+@media (max-width: 460px) {
+
+  .Title {
+    font-size: 36px;
+  }
+  
+}

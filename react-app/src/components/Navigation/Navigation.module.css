@@ -5,3 +5,13 @@
   gap: 30px;
   margin: 40px 0 60px;
 }
+
+@media (max-width: 496px) {
+
+  .Navigation {
+    flex-direction: column;
+    gap: 14px;
+    margin: 20px 0 30px;
+  }
+  
+}
