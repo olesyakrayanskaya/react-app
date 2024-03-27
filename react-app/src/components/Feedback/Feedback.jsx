@@ -27,6 +27,7 @@ function Feedback() {
                             setForm({ ...prev, name: event.target.value })
                         }
                         title="Ваше имя"
+                        required
                     />
                 </fieldset>
                 <fieldset className={classes.Feedback__fieldset}>
@@ -41,6 +42,7 @@ function Feedback() {
                             setForm({ ...prev, email: event.target.value })
                         }
                         title="Ваш email"
+                        required
                     />
                 </fieldset>
                 <fieldset className={classes.Feedback__fieldset}>
@@ -55,6 +57,7 @@ function Feedback() {
                             setForm({ ...prev, tel: event.target.value })
                         }
                         title="Ваш номер телефона"
+                        required
                     />
                 </fieldset>
                 <fieldset className={classes.Feedback__fieldset}>
