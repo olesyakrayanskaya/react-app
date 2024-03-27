@@ -1,0 +1,103 @@
+.Feedback {
+  margin: 0 auto;
+}
+
+.Feedback__title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #cea13e;
+}
+
+.Feedback__legend {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Feedback__form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.Feedback__fieldset {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  border: transparent;
+}
+
+.Feedback__label {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.Feedback__input {
+  width: 400px;
+  padding: 3px 6px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: transparent;
+  border-bottom: 1px solid rgba(19, 18, 18, 0.87);
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.Feedback__select {
+  width: 150px;
+  padding: 3px 6px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: transparent;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.Feedback__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 45px;
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #cea13e;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all 0.4s;
+}
+
+.Feedback__btn:hover {
+  background-color: #bcbac1;
+}
+
+@media (max-width: 776px) {
+
+  .Feedback__fieldset {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Feedback__input {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 460px) {
+
+  .Feedback__btn {
+    width: 100%;
+  }
+
+}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Button from '../Button/Button';
+import classes from './Feedback.module.css';
 
 function Feedback() {
     const [form, setForm] = useState({
@@ -9,70 +9,87 @@ function Feedback() {
         rate: '',
     });
     return (
-        <section className="Feedback">
-            <h2 className="Feedback__title">Обратная связь</h2>
-            <legend className="Feedback__legend">
+        <section className={classes.Feedback}>
+            <h2 className={classes.Feedback__title}>Обратная связь</h2>
+            <legend className={classes.Feedback__legend}>
                 Заполните, пожалуйста, форму:
             </legend>
-            <form action="post" className="Feedback__form">
-                <label htmlFor="name" className="Feedback__label">
-                    Ваше имя:
-                </label>
-                <input
-                    type="text"
-                    className="Feedback__form"
-                    id="name"
-                    onChange={(event, prev) =>
-                        setForm({ ...prev, name: event.target.value })
-                    }
-                    title="Ваше имя"
-                />
-                <label htmlFor="email" className="Feedback__label">
-                    Адрес электронной почты:
-                </label>
-                <input
-                    type="email"
-                    className="Feedback__form"
-                    id="email"
-                    onChange={(event, prev) =>
-                        setForm({ ...prev, email: event.target.value })
-                    }
-                    title="Ваш email"
-                />
-                <label htmlFor="tel" className="Feedback__label">
-                    Ваш номер телефона:
-                </label>
-                <input
-                    type="tel"
-                    className="Feedback__form"
-                    id="tel"
-                    onChange={(event, prev) =>
-                        setForm({ ...prev, tel: event.target.value })
-                    }
-                    title="Ваш номер телефона"
-                />
-                <label htmlFor="rate" className="Feedback__label">
-                    Выберите тариф:
-                </label>
-                <select
-                    name="rates"
-                    id="rate"
-                    className="Feedback__select"
-                    onChange={(event, prev) =>
-                        setForm({ ...prev, rate: event.target.value })
-                    }
-                >
-                    <option className="Feedback__option" value="lite">
-                        lite
-                    </option>
-                    <option className="Feedback__option" value="standart">
-                        standart
-                    </option>
-                    <option className="Feedback__option" value="premium">
-                        premium
-                    </option>
-                </select>
-                <Button>Отправить</Button>
+            <form action="post" className={classes.Feedback__form}>
+                <fieldset className={classes.Feedback__fieldset}>
+                    <label htmlFor="name" className={classes.Feedback__label}>
+                        Ваше имя:
+                    </label>
+                    <input
+                        type="text"
+                        className={classes.Feedback__input}
+                        id="name"
+                        onChange={(event, prev) =>
+                            setForm({ ...prev, name: event.target.value })
+                        }
+                        title="Ваше имя"
+                    />
+                </fieldset>
+                <fieldset className={classes.Feedback__fieldset}>
+                    <label htmlFor="email" className={classes.Feedback__label}>
+                        Адрес электронной почты:
+                    </label>
+                    <input
+                        type="email"
+                        className={classes.Feedback__input}
+                        id="email"
+                        onChange={(event, prev) =>
+                            setForm({ ...prev, email: event.target.value })
+                        }
+                        title="Ваш email"
+                    />
+                </fieldset>
+                <fieldset className={classes.Feedback__fieldset}>
+                    <label htmlFor="tel" className={classes.Feedback__label}>
+                        Ваш номер телефона:
+                    </label>
+                    <input
+                        type="tel"
+                        className={classes.Feedback__input}
+                        id="tel"
+                        onChange={(event, prev) =>
+                            setForm({ ...prev, tel: event.target.value })
+                        }
+                        title="Ваш номер телефона"
+                    />
+                </fieldset>
+                <fieldset className={classes.Feedback__fieldset}>
+                    <label htmlFor="rate" className={classes.Feedback__label}>
+                        Выберите тариф:
+                    </label>
+                    <select
+                        name="rates"
+                        id="rate"
+                        className={classes.Feedback__select}
+                        onChange={(event, prev) =>
+                            setForm({ ...prev, rate: event.target.value })
+                        }
+                    >
+                        <option
+                            className={classes.Feedback__option}
+                            value="lite"
+                        >
+                            lite
+                        </option>
+                        <option
+                            className={classes.Feedback__option}
+                            value="standart"
+                        >
+                            standart
+                        </option>
+                        <option
+                            className={classes.Feedback__option}
+                            value="premium"
+                        >
+                            premium
+                        </option>
+                    </select>
+                </fieldset>
+                <button className={classes.Feedback__btn} type='submit'>Отправить</button>
             </form>
         </section>
     );
